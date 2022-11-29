@@ -46,13 +46,31 @@ switch(opcion){
 
         break;
 
-    case "4":
-         alert("Opcion 4")
-        break;
+   case "4":
+         alert("Eligio la Opcion 4, de calculo de Calcular el tiempo de espera promedio en realción a la cantidad de turnos")
+                 let cantturnos = parseInt(prompt("Ingrese la cantidad de turno"))
+             let tiempodeespera = (cantturnos*15)
+         alert("El tiempo de espera es  igual a :"+ tiempodeespera+"minutos")
+         break;
+ 
+    
+   
+         break;
 
     case "5":
-        alert("Opcion 5")
+        alert("Eligio la Opcion 5, de calculo de la edad promedio de personas registradas")
          break;
+
+         alert("eligio la Opcion 1, le va a pedir el valir de los 5 productos")
+        
+         let persona1 = parseInt(prompt("Ingrese la edad de la persona 1"))
+         let persona2 = parseInt(prompt("Ingrese la edad de la persona 2"))
+         let persona3 = parseInt(prompt("Ingrese la edad de la persona 3"))
+         let persona4 = parseInt(prompt("Ingrese la edad de la persona 4"))
+         let persona5 = parseInt(prompt("Ingrese la edad de la persona 5"))
+         let Promedioedad = ((persona1 + persona2 + persona3 + persona4 + persona5)/5)
+         alert("El promedio de edad es :"+ Promedioedad)
+ 
 
     default:
         alert("no ingreso ninguna opcion valida. Las opciones validas son: 1,2,3,4,5 y 6")
