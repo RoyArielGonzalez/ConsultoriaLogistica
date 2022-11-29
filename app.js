@@ -5,7 +5,6 @@ let opcion=prompt("Ingrese la opciones de simulacion que desea:   1-Calcular el 
 
 
 
-
 switch(opcion){
     case "1":
         alert("eligio la Opcion 1, le va a pedir el valir de los 5 productos")
@@ -23,7 +22,7 @@ switch(opcion){
 
     case "2":
         alert("Eligio la Opcion 2, de calculo de valor del producto con impuesto y descuentos")
-                let valor2 = parseInt(prompt("Ingrese el valor del producto"))
+        let valor2 = parseInt(prompt("Ingrese el valor del producto"))
         let impuesto = parseInt(prompt("ingrese el % de impuestos que se suman (ejemplo:5)"))
         let descuento = parseInt(prompt("ingrese el % descuento que se suman (ejemplo:5)"))
         
@@ -33,9 +32,8 @@ switch(opcion){
         break;
 
     case "3":
-        alert("Opcion 3")
 
-        alert("Eligio la Opcion 2, de calculo de pago en cuotas ingrese un valor y despues la cantidad de cuotas")
+        alert("Eligio la Opcion 3, de calculo de pago en cuotas ingrese un valor y despues la cantidad de cuotas")
                 let valor1 = parseInt(prompt("Ingrese el valor del producto"))
         let cuotas = parseInt(prompt("ingrese la cantidad de cuotas"))
         let valorcuota = ((valor1)/cuotas)
@@ -43,25 +41,15 @@ switch(opcion){
         break;
 
 
-
-        break;
-
-   case "4":
+    case "4":
          alert("Eligio la Opcion 4, de calculo de Calcular el tiempo de espera promedio en realción a la cantidad de turnos")
                  let cantturnos = parseInt(prompt("Ingrese la cantidad de turno"))
              let tiempodeespera = (cantturnos*15)
          alert("El tiempo de espera es  igual a :"+ tiempodeespera+"minutos")
          break;
- 
-    
-   
-         break;
 
     case "5":
         alert("Eligio la Opcion 5, de calculo de la edad promedio de personas registradas")
-         break;
-
-         alert("eligio la Opcion 1, le va a pedir el valir de los 5 productos")
         
          let persona1 = parseInt(prompt("Ingrese la edad de la persona 1"))
          let persona2 = parseInt(prompt("Ingrese la edad de la persona 2"))
@@ -70,10 +58,10 @@ switch(opcion){
          let persona5 = parseInt(prompt("Ingrese la edad de la persona 5"))
          let Promedioedad = ((persona1 + persona2 + persona3 + persona4 + persona5)/5)
          alert("El promedio de edad es :"+ Promedioedad)
+         break;
  
-
     default:
-        alert("no ingreso ninguna opcion valida. Las opciones validas son: 1,2,3,4,5 y 6")
+            alert("No ingreso ninguna opcion valida. Las opciones validas son: 1,2,3,4,5 y 6")
         break;
      
 }
