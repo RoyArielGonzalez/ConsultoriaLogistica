@@ -36,7 +36,7 @@ switch(opcion){
         alert("Opcion 3")
 
         alert("Eligio la Opcion 2, de calculo de pago en cuotas ingrese un valor y despues la cantidad de cuotas")
-                let Valor1 = parseInt(prompt("Ingrese el valor del producto"))
+                let valor1 = parseInt(prompt("Ingrese el valor del producto"))
         let cuotas = parseInt(prompt("ingrese la cantidad de cuotas"))
         let valorcuota = ((valor1)/cuotas)
         alert("El valor de cuota es igual a :"+ valorcuota)
