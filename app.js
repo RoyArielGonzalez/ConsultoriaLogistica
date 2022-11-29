@@ -1,6 +1,6 @@
 //Declaración de variables
 
-let opcion=prompt("Ingrese la opciones de simulacion que desea:   1-Calcular el costo total del los producto selecionados.  2-calcular pagos en cuotas. 3-calcular el valor final de un producto con impuestos y descuentos. 4 calcular el tiempo de espera promedio en realcion a la cantidad de turnos . 5 Calcular la edad promedio de personas registradas. 6 nota filan de alumnos ingresados")
+let opcion=prompt("Ingrese la opciones de simulacion que desea:   1-Calcular el costo total del los producto selecionados.  2-calcular el valor final de un producto con impuestos y descuentos.  3-calcular pagos en cuotas. 4 calcular el tiempo de espera promedio en realcion a la cantidad de turnos . 5 Calcular la edad promedio de personas registradas. 6 nota filan de alumnos ingresados")
 
 
 
@@ -22,11 +22,28 @@ switch(opcion){
         break;
 
     case "2":
-        alert("Opcion 2")
+        alert("Eligio la Opcion 2, de calculo de valor del producto con impuesto y descuentos")
+                let valor2 = parseInt(prompt("Ingrese el valor del producto"))
+        let impuesto = parseInt(prompt("ingrese el % de impuestos que se suman (ejemplo:5)"))
+        let descuento = parseInt(prompt("ingrese el % descuento que se suman (ejemplo:5)"))
+        
+        let Totalproducto = valor2*(1+impuesto/100)*(1-descuento/100)
+
+        alert("El valor del producto con descuento e impuestos es igual a:"+ Totalproducto)
         break;
 
     case "3":
         alert("Opcion 3")
+
+        alert("Eligio la Opcion 2, de calculo de pago en cuotas ingrese un valor y despues la cantidad de cuotas")
+                let Valor1 = parseInt(prompt("Ingrese el valor del producto"))
+        let cuotas = parseInt(prompt("ingrese la cantidad de cuotas"))
+        let valorcuota = ((valor1)/cuotas)
+        alert("El valor de cuota es igual a :"+ valorcuota)
+        break;
+
+
+
         break;
 
     case "4":
