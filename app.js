@@ -1,6 +1,8 @@
 //Declaración de variables
 
-let opcion=prompt("Ingrese la opciones de simulacion que desea:   1-Calcular el costo total del los producto selecionados.  2-calcular el valor final de un producto con impuestos y descuentos.  3-calcular pagos en cuotas. 4 calcular el tiempo de espera promedio en realcion a la cantidad de turnos . 5 Calcular la edad promedio de personas registradas. 6 nota filan de alumnos ingresados")
+
+let opcion=prompt("Ingrese la opciones de simulacion que desea:   1- Calcular el costo total del los producto selecionados.  2- Calcular el valor final de un producto con impuestos y descuentos. 3- Calcular pagos en cuotas. 4- Calcular el tiempo de espera promedio en realción a la cantidad de turnos. 5 Calcular la edad promedio de personas registradas. 6. Calculo del promedio de nota de los alumnos ingresados")
+
 
 
 
@@ -60,6 +62,19 @@ switch(opcion){
          alert("El promedio de edad es :"+ Promedioedad)
          break;
  
+    case "6":
+            alert("Eligio la Opcion 6, de calculo de la promedio de Notas de los alumnos")
+            
+             let alumno1 = parseInt(prompt("Ingrese la nota del alumno 1"))
+             let alumno2 = parseInt(prompt("Ingrese la nota del alumno 2"))
+             let alumno3 = parseInt(prompt("Ingrese la nota del alumno 3"))
+             let alumno4 = parseInt(prompt("Ingrese la nota del alumno 4"))
+             let alumno5 = parseInt(prompt("Ingrese la nota del alumno 5"))
+        
+             let Promedionota = ((alumno1 + alumno2 + alumno3 + alumno4 + alumno5)/5)
+             alert("El promedio de edad es :"+ Promedionota)
+             break;
+
     default:
             alert("No ingreso ninguna opcion valida. Las opciones validas son: 1,2,3,4,5 y 6")
         break;
