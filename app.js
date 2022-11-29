@@ -47,7 +47,7 @@ switch(opcion){
          alert("Eligio la Opcion 4, de calculo de Calcular el tiempo de espera promedio en realción a la cantidad de turnos")
                  let cantturnos = parseInt(prompt("Ingrese la cantidad de turno"))
              let tiempodeespera = (cantturnos*15)
-         alert("El tiempo de espera es  igual a :"+ tiempodeespera+"minutos")
+         alert("El tiempo de espera es  igual a :"+ tiempodeespera+" minutos")
          break;
 
     case "5":
