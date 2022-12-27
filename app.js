@@ -67,7 +67,7 @@ const eliminar = (Nombre) => {
 
 }
 
-*/
+
 
 let total =0
 
@@ -141,3 +141,158 @@ switch(opcion){
         break;
      
 }
+
+
+let elemento = document;
+let elemento1 = document.body;
+let elemento2 = document.head;
+
+console.log(elemento)
+console.log(elemento1)
+console.log(elemento2)
+
+let navbar= document.getElementsByTagName("nav")
+*/
+
+
+// let container= document.querySelector("body").textContent= "NUEVA PAGINA";
+
+
+//let container= document.querySelector("nav");
+
+// container.remove();
+
+/*
+let agregar =document.createElement("h5");
+agregar.innerHTML=" Agregando un elemento nuevo";
+
+document.body.appendChild(agregar);
+
+console.log(agregar)
+*/
+
+
+//let container1= document.querySelector("CuadradoPie")
+
+
+
+
+// let productoform = document.querySelector('#producto')
+
+/*
+let costoform = document.querySelector('#costo')
+
+productoform.addEventListener("imput",function(){
+
+    console.log(productoform.value)
+    if(productoform.value==="") {
+     alert("ingrese un producto valido")
+}
+
+})
+
+costoform.addEventListener("imput",function(){
+console.log(costoform.value)
+if(productoform.value==="" & productoform.value > 0) {
+ alert("ingrese un costo valido")
+}
+
+})
+
+
+
+let formulario= document.querySelector("")
+let info = document.querySelector(".info")
+
+const mostrarinfo=formulario.addEventListener("submit",function(e) {
+    e.preventDefault();
+    info.innerHTML="<h5> Gracias por comprar un $(productoform.value)  </h5>"
+})
+
+
+let variable1 = document.getElementById("boton1")
+console.log(variable1)
+*/
+
+
+//let variable2 = document.getElementsByClassName
+//let variable3 = document.getElementsByTagName
+
+
+
+// console.log(variable1)
+
+//let elemento = document;
+
+
+//let carro1= "carrito";
+
+/*
+let carro= document.getElementsByTagName("div#carro")
+let agregar =document.createElement("h5");
+agregar.innerHTML=" Agregando un elemento nuevo";
+
+document.body.appendChild(agregar);
+
+console.log(agregar)
+
+console.log(carro);
+
+
+let agregarinput= document.createElement("input");
+agregarinput.setAttribute("type","text");
+agregarinput.setAttribute("placeholder","Ingrese info");
+
+document.querySelector("body").appendChild(agregarinput);
+
+
+
+let botonagregado = document.createElement("button");
+botonagregado.setAttribute("class","btn btn-primary");
+botonagregado.setAttribute("id","botonAgregado");
+botonagregado.textContent="Agregar Curso";
+
+document.querySelector("body").appendChild(botonagregado);
+
+
+
+
+let alumnos = ["Jose","Pedro","Brian", "Tomas"];
+let listavacia = document.querySelector("body");
+
+
+for ( let alumno of alumnos){
+    let listado=document.createElement("li");
+listado.innerHTML= alumno;
+listavacia.appendChild(listado);
+
+}
+
+*/
+
+let cursos =[
+{Id: 1, titulo: "Desarrollo Web", Precio: 3000},
+{Id: 2, titulo: "Javascript", Precio: 4000},
+{Id: 3, titulo: "React Js", Precio: 5000}
+];
+
+for (curso of cursos){
+    let contenedor= document.createElement("div");
+    contenedor.innerHTML=` 
+        <h3>Curso: ${curso.titulo}</h3>
+    <p>Precio: ${curso.Precio}</p>
+    <button class="btn btn-sucess"> Agregar</button>
+    <button class="btn btn-danger"> Eliminar</button>
+    `;
+
+    document.body.appendChild(contenedor);
+
+}
+
+
+
+
+
+
+
+
